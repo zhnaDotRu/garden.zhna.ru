@@ -1,0 +1,45 @@
+.button-menu {
+  display: none;
+  height: 14px;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 20px;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+
+.button-menu-line {
+  background-color: #555;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.1s;
+  width: 100%;
+
+  &:first-child {
+    top: 0;
+
+    .button-menu.is-open & {
+      top: 50%;
+      transform: rotateZ(45deg);
+    }
+  }
+
+  &:nth-child(2) {
+    .button-menu.is-open & {
+      opacity: 0;
+    }
+  }
+
+  &:last-child {
+    top: 100%;
+
+    .button-menu.is-open & {
+      top: 50%;
+      transform: rotateZ(-45deg);
+    }
+  }
+}

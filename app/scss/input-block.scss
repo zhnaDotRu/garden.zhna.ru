@@ -1,0 +1,23 @@
+.input-block {
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.input-block-text {
+  flex-basis: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.input-block-in {
+  display: block;
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+
+  &.is-error {
+    border: solid 1px #f00;
+  }
+}

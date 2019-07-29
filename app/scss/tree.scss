@@ -1,0 +1,16 @@
+.tree {
+  display: flex;
+  margin: 10px;
+}
+
+.tree-img {
+  flex-basis: 80px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 80px;
+}
+
+.tree-info-text {
+  line-height: 20px;
+  margin: 0;
+}

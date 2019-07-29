@@ -1,0 +1,17 @@
+.button-block {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 10px 0;
+}
+
+.button-block-btn {
+  background-color: #fff;
+  border: solid 1px #5c5c5c;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-basis: 70px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 20px;
+  text-align: center;
+}

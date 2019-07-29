@@ -1,0 +1,23 @@
+.info {
+  display: flex;
+
+  @media (max-width: 600px) {
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+.info-text {
+  margin: 0 20px 0 20px;
+  padding-bottom: 10px;
+
+  @media (max-width: 600px) {
+    display: flex;
+  }
+}
+
+.info-text-span {
+  &.mod-h {
+    flex: 1;
+  }
+}

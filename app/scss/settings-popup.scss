@@ -1,0 +1,24 @@
+.settings-popup {
+  background-color: #fff;
+  border: solid 1px #c2c2c2;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: calc(50% - 150px);
+  padding: 10px;
+  position: fixed;
+  top: 90px;
+  width: 300px;
+
+  &.is-closed {
+    display: none;
+  }
+
+  @media (max-width: 850px) {
+    top: 120px;
+  }
+
+  @media (max-width: 600px) {
+    top: 60px;
+  }
+}

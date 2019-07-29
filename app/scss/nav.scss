@@ -1,0 +1,32 @@
+.nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+
+  @media (max-width: 850px) {
+    top: 120px;
+  }
+
+  @media (max-width: 600px) {
+    border-top: solid 1px #5c5c5c;
+    padding: 10px 0 10px 0;
+    position: fixed;
+    top: calc(100% - 40px);
+  }
+}
+
+.nav-button {
+  background-color: #fff;
+  border: solid 1px #5c5c5c;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-basis: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
